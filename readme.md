@@ -69,7 +69,7 @@ This will spam your server with a lot of requests. The more you increase the dur
 
 ### Run the rate limited middleware
 
-first setup the ratelimit for your application (check constant reteLimit in middleware_rate_limited), by default it will block every second.
+first setup the ratelimit for your application (check constant `rateLimit` in `middleware_rate_limited/main.go`), by default it will block every second.
 
 ```bash
 prakhar@tardis (master)✗ [1] % go run middleware_rate_limited/main.go
