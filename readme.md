@@ -83,6 +83,8 @@ you will observe different response from the target server based on duration, ra
 - for duration = 2s, rate = 10 and rateLimit = time.Second/2 ~ 10 seconds.
 - for duration = 2s, rate = 10 and rateLimit = time.Second*2 ~ 40 seconds.
 
+check the logs for `middleware_rate_limited/main.go` for timing details.
+
 ```bash
 prakhar@tardis (master)✗ % vegeta attack -duration=2s -rate=10 -targets=target.list --output=resp.bin && vegeta report resp.bin                                          ~/Workspace/examples/blog.examples/workers/c_collect
 Requests      [total, rate, throughput]         20, 10.53, 10.53
