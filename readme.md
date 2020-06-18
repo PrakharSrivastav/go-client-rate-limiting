@@ -1,5 +1,8 @@
 # Client side rate limiting
 
+This repository is to support [this](https://www.prakharsrivastav.com/posts/client-side-ratelimiting/
+) blog post.
+
 There are several integration scenarios where a middleware just acts as a proxy between two applications. This behaves good under low traffic conditions but might start spamming the target application under high traffic conditions. 
 
 This setup is one of the several ways in which a middleware can throttle the requests to target applications. 
